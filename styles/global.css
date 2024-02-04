@@ -1,0 +1,19 @@
+/* GLOBAL --------------------------- */
+
+:root {
+    --green: #27963C;
+    --green-hover: #088A68;
+    --content: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--content);
+}
+

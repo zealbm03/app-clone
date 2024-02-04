@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturampic</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+
+</head>
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./scripts/circle-progress.js"></script>
+
+    <section class="report-container container-loading">
+        <div class="container">
+            <h1 class="title">Análise inicial do seu perfil</h1>	
+            <div class="report">
+                <div class="report-row">
+                    <div class="report-left">
+                        <div class="report-score">
+                            <span class="score-title">SEU DIAGNÓSTICO:</span>
+                            <div class="score-bar">
+                                <span class="score-label">51%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="report-right">
+                                                                                        <div class="report-result">Resultado: Ruim 🙂</div>                <div class="report-image">
+                                                <img src="./assets/mulher_30anos_verde.webp" alt="Análise inicial do seu perfil" />                                                        </div>
+                    </div>
+                </div>
+                <div class="report-row">
+                    <div class="report-metrics">
+                        <div class="metrics-col">
+                            <div class="metrics-bar">
+                                <div class="bar1-progress"><span class="bar-label">60%</span></div>
+                            </div>
+                            <span class="metrics-title">MENTALIDADE</span>
+                            <span class="metrics-desc">ProntA para<br />o tratamento</span>
+                        </div>
+                        <div class="metrics-col">
+                            <div class="metrics-bar">
+                                <div class="bar2-progress"><span class="bar-label">44%</span></div>
+                            </div>
+                            <span class="metrics-title">SAÚDE</span>
+                            <span class="metrics-desc">Risco<br />de doença</span>
+                        </div>
+                        <div class="metrics-col">
+                            <div class="metrics-bar">
+                                <div class="bar3-progress"><span class="bar-label">45%</span></div>
+                            </div>
+                            <span class="metrics-title">SACIEDADE</span>
+                            <span class="metrics-desc">Abaixo <br />da média</span>
+                        </div>
+                        <div class="metrics-col" style="margin-right: 0;border: 0;padding: 0;">
+                            <div class="metrics-bar">
+                                <div class="bar4-progress"><span class="bar-label">38%</span></div>
+                            </div>
+                            <span class="metrics-title">INFORMAÇÃO</span>
+                            <span class="metrics-desc">Falta de <br />conhecimento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notice">
+                <span class="notice-title">
+                    <img src="./assets/alert.webp" alt="Aviso" class="notice-icon">
+                    Sua situação é preocupante
+                </span>
+                <span class="notice-text">
+                    Parabéns pela iniciativa de buscar ajuda, o seu caso precisa de atenção. Vamos te ajudar a resolver este problema nos próximos passos.
+                </span>
+            </div>
+
+            <a href="25.html" class="button">Continuar</a>
+        </div>
+    </section>
+
+
+    <div class="modal-loading">
+        <div class="modal-overlay">
+            <div class="loading-bar">
+                <div class="loading-bar-progress"></div>
+            </div>
+            <h1 class="title">Analisando...</h1>
+            <p class="subtitle">Estamos analisando as suas<br>respostas e preparando<br>o seu relatório...</p>
+        </div>
+    </div>
+
+    <script>
+
+        /* CIRCLE */
+        
+        setTimeout(()=>{
+            $('.score-bar').circleProgress({
+                value: 0.51,
+                lineCap: 'round',
+                size: 120,
+                thickness: 16,
+                animationStartValue: 0,
+                startAngle: 4.8,
+                emptyFill: "#EEEEEE",
+                animation: { duration: 3000, easing: "circleProgressEasing" },
+                fill: { gradient: ["#b3701e", "#ff5b45"] }
+            }).on('circle-animation-progress', function(event, progress) {
+                $(this).find('.score-label').html(Math.round(51 * progress) + '%');
+            });
+        }, 8000);
+        
+    </script>
+
+</body>
+</html>

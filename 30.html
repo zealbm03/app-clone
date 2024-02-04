@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturampic</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts/circle/dist/circle-progress.js"></script>
+
+</head>
+<body>
+    <section class="checkout container">
+        <div class="content center">
+              <h1>Conheça agora o seu<br />Protocolo Naturampic.</h1>	    <div class="checkout-display">
+              <div class="checkout-flex">
+                  <div class="checkout-left">
+                      <span class="checkout-title">HOJE</span>
+                  </div>
+                  <div class="checkout-right">
+                      <span class="checkout-title">DEPOIS</span>
+                  </div>
+              </div>
+              <div class="checkout-transform">
+                  <div class="checkout-left">
+                      <img class="checkout-image" src="./assets/antes.png" alt="Conheça agora o seu Protocolo Naturampic." />                                                            </div>
+                  <div class="checkout-right">
+                      <img class="checkout-image" src="./assets/depois.png" alt="Conheça agora o seu Protocolo Naturampic." />                                                                
+                  </div>
+              </div>
+              <div class="checkout-flex">
+                  <div class="checkout-left">
+                      <span class="checkout-text">Sobrepeso<br />agora.</span>
+                      <div class="checkout-bar">
+                          <div class="checkout-bar-progress">
+                              <div class="checkout-bar-icon"></div>
+                          </div>
+                      </div>
+                      <div class="checkout-status">
+                          <img class="status-icon" src="./assets/alert.webp" />Seu peso está acima da média                </div>
+                  </div>
+                  <div class="checkout-right">
+                      <span class="checkout-text">Seu corpo desejado<br /> daqui 21 dias.</span>
+                      <div class="checkout-bar">
+                          <div class="checkout-bar-progress">
+                              <div class="checkout-bar-icon"></div>
+                          </div>
+                      </div>
+                      <div class="checkout-status">
+                          <img class="status-icon" src="./assets/check.webp" />Você vivendo livre e feliz com o seu corpo dos sonhos.                </div>
+                  </div>
+              </div>
+          </div>
+          <a class="button" style="animation-delay: 1s;" href="https://pay.kiwify.com.br/gaP7t75?utm_campaign=&amp;utm_source=&amp;utm_content=&amp;utm_medium=&amp;utm_term=">Começar agora!</a> 
+           
+           
+              <div class="checkout-safe">
+              <img class="safe-icon" src="./assets/safe.webp" />Pagamento 100% seguro    </div>
+          <span class="checkout-promise">Seu Protocolo caseiro exclusivo para  <u>emagrecimento rápido e natural</u> está pronto.</span>
+      
+          <!-- PLAN -->
+          <div class="report plan">
+            <div class="report-row">
+                <div class="report-metrics">
+                    <div class="metrics-col">
+                        <div class="metrics-bar">
+                            <div class="plan1-progress"><span class="bar-label"></span></div>
+                        </div>
+                        <span class="metrics-title">HOJE</span>
+                        <span class="metrics-desc">Peso acima<br />do ideal</span>
+                    </div>
+                    <div class="metrics-col">
+                        <div class="metrics-bar">
+                            <div class="plan2-progress"><span class="bar-label"></span></div>
+                        </div>
+                        <span class="metrics-title">7 DIAS</span>
+                        <span class="metrics-desc">Início<br />do tratamento</span>
+                    </div>
+                    <div class="metrics-col">
+                        <div class="metrics-bar">
+                            <div class="plan3-progress"><span class="bar-label"></span></div>
+                        </div>
+                        <span class="metrics-title">14 DIAS</span>
+                        <span class="metrics-desc">Metade do <br />tratamento</span>
+                    </div>
+                    <div class="metrics-col" style="margin-right: 0;border: 0;padding: 0;">
+                        <div class="metrics-bar">
+                            <div class="plan4-progress"><span class="bar-label"></span></div>
+                        </div>
+                        <span class="metrics-title">21 DIAS</span>
+                        <span class="metrics-desc">Tratamento <br />completo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+          <!-- OBJETIVO -->
+      
+          <div class="checkout-flex">
+              <div class="checkout-goal">
+                  <span class="checkout-goal-title">Seu maior objetivo</span>
+                  <span class="checkout-goal-text"><img class="checkout-goal-icon" src="./assets/goal.webp" alt="Objetivos" />Eliminar de vez<br /> os kilos a mais.</span>
+              </div>
+              <div class="checkout-goal" style="margin-right: 0;">
+                  <span class="checkout-goal-title">Tempo para atingir</span>
+                  <span class="checkout-goal-text"><img class="checkout-goal-icon" src="./assets/clock.webp" alt="Tempo" />Até 21 dias<br />se começando hoje.</span>
+              </div>
+          </div>
+      
+          <!-- PREÇO -->
+      
+          <div class="checkout-price">
+              <div class="checkout-price-left">
+                  <div class="checkout-price-icon"></div>
+                  <span class="checkout-price-title">TESTE POR 30 DIAS</span>
+                  <span class="checkout-price-text">Sem compromisso</span>
+              </div>
+              <div class="checkout-price-right">
+                  <span class="checkout-price-desc">Por apenas 4x de</span>
+                  <span class="checkout-price-value">R$ 8,04</span>
+              </div>
+          </div>
+      
+              <div class="checkout-discount">
+              <img class="notice-icon" src="./assets/timer.webp" />Seu desconto expira em <span id="timer1"></span> min
+          </div>
+          
+          <a class="button" style="animation-delay: 1s;" href="https://pay.kiwify.com.br/gaP7t75?utm_campaign=&amp;utm_source=&amp;utm_content=&amp;utm_medium=&amp;utm_term=">Começar agora!</a> 
+           
+           
+          
+          <div class="checkout-safe">
+              <img class="safe-icon" src="./assets/safe.webp" />Pagamento 100% seguro    </div>
+      
+          <!-- BENEFÍCIOS -->
+      
+          <div class="checkout-block">
+              <span class="checkout-block-title">O que você vai receber?</span>
+              <ul class="checkout-block-list">
+                  <li><img class="checkout-list-icon" src="./assets/check.webp" alt="Um protocolo caseiro exclusivo para você, gerado através dos seus maiores desejos e necessidades." /> Um protocolo caseiro exclusivo para você, gerado através dos seus maiores desejos e necessidades.</li>            <li><img class="checkout-list-icon" src="./assets/check.webp" alt="Um tratamento natural, simples e fácil de ser aplicado, que não trará nenhum prejuízo para a sua saúde." /> Um tratamento natural, simples e fácil de ser aplicado, que não trará nenhum prejuízo para a sua saúde.</li>            <li><img class="checkout-list-icon" src="./assets/check.webp" alt="O protocolo vai controlar a sua saciedade de forma natural, permitindo um emagrecimento sem exercícios físicos, remédios fortes ou cirurgias" /> O protocolo vai controlar a sua saciedade de forma natural, permitindo um emagrecimento sem exercícios físicos, remédios fortes ou cirurgias</li>            <li><img class="checkout-list-icon" src="./assets/check.webp" alt="Criado por profissionais e planejado para encaixar com o seu perfil, de acordo com as suas respostas." /> Criado por profissionais e planejado para encaixar com o seu perfil, de acordo com as suas respostas.</li>            <li><img class="checkout-list-icon" src="./assets/check.webp" alt="Um plano totalmente personalizado para você com ingredientes naturais e fáceis de serem encontrados" /> Um plano totalmente personalizado para você com ingredientes naturais e fáceis de serem encontrados</li>                    </ul>
+          </div>
+      
+          
+          <!-- NÚMEROS -->
+      
+          <div class="checkout-flex">
+              <div class="checkout-numbers">
+                  <span class="checkout-numbers-title">98%</span>
+                  <span class="checkout-numbers-text">Clientes<br />satisfeitos</span>
+              </div>
+              <div class="checkout-numbers">
+                  <span class="checkout-numbers-title">134 mil</span>
+                  <span class="checkout-numbers-text">Pessoas<br />atendidas</span>
+              </div>
+              <div class="checkout-numbers" style="margin: 0;">
+                  <span class="checkout-numbers-title">367%</span>
+                  <span class="checkout-numbers-text">Aumento médio<br />da saciedade</span>
+              </div>
+          </div>
+      
+          <!-- PREÇO -->
+      
+          <div class="checkout-price">
+              <div class="checkout-price-left">
+                  <div class="checkout-price-icon"></div>
+                  <span class="checkout-price-title">TESTE POR 30 DIAS</span>
+                  <span class="checkout-price-text">Sem compromisso</span>
+              </div>
+              <div class="checkout-price-right">
+                  <span class="checkout-price-desc">Por apenas 4x de</span>
+                  <span class="checkout-price-value">R$ 8,04</span>
+              </div>
+          </div>
+      
+              <div class="checkout-discount">
+              <img class="notice-icon" src="./assets/timer.webp" />Seu desconto expira em <span id="timer2"></span> min
+          </div>
+          
+          <a class="button" style="animation-delay: 1s;" href="https://pay.kiwify.com.br/gaP7t75?utm_campaign=&amp;utm_source=&amp;utm_content=&amp;utm_medium=&amp;utm_term=">Começar agora!</a> 
+           
+           
+          
+          <div class="checkout-safe">
+              <img class="safe-icon" src="./assets/safe.webp" />Pagamento 100% seguro    </div>
+      
+          
+          <!-- DEPOIMENTOS -->
+      
+          <div class="checkout-depo">
+              <span class="depo-title">Quem conhece, recomenda!</span>
+                      <div class="depo-row">
+                  <div class="depo-name"><img class="depo-image" src="./assets/dep1.png" alt="Juliana Alves" /> Juliana Alves</div>
+                  <div class="depo-text">Com o Naturampic, emagreci 5 quilos em 3 semanas sem mexer um músculo! Sem dietas malucas, apenas seguindo o protocolo natural..</div>
+                  <div class="depo-stars">
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                  </div>
+              </div>
+                      <div class="depo-row">
+                  <div class="depo-name"><img class="depo-image" src="./assets/dep2.webp" alt="Juscelina de Almeida" /> Juscelina de Almeida</div>
+                  <div class="depo-text">Perdi 7 quilos em 21 dias com o protocolo natural de emagrecimento do Naturampic. Mais energia e menos fome. Recomendo!</div>
+                  <div class="depo-stars">
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                  </div>
+              </div>
+                      <div class="depo-row">
+                  <div class="depo-name"><img class="depo-image" src="./assets/dep3.png" alt="Cláudia Pacheco" /> Cláudia Pacheco</div>
+                  <div class="depo-text">Sem precisar de academia ou dietas chatas, perdi 6 quilos em 21 dias com o Naturampic! Um método fácil e eficaz para emagrecer.</div>
+                  <div class="depo-stars">
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                      <img src="./assets/star.webp" alt="Star" />
+                                  </div>
+              </div>
+                  </div>
+      
+          
+          <!-- GARANTIA -->
+      
+          <div class="checkout-garanty">
+              <img class="checkout-garanty-image" src="./assets/garanty.webp" alt="Garantia" />
+              <span class="checkout-garanty-title">Teste sem compromisso!</span>
+              <p class="subtitle">Aqui sua satisfação é garantida, você tem 30 dias de <strong>garantia incondicional</strong>.</p><br>
+          <p class="subtitle">Faça a sua inscrição agora e receba um período de teste de 30 dias sem compromisso.</p><br>
+          <p class="subtitle">Se não gostar, não importa qual seja o motivo, basta enviar um e-mail...</p><br>
+          <p class="subtitle">Faremos seu reembolso de forma imediata, sem fazer perguntas.</p>    </div>
+      
+          <!-- PREÇO -->
+      
+          <div class="checkout-price">
+              <div class="checkout-price-left">
+                  <div class="checkout-price-icon"></div>
+                  <span class="checkout-price-title">TESTE POR 30 DIAS</span>
+                  <span class="checkout-price-text">Sem compromisso</span>
+              </div>
+              <div class="checkout-price-right">
+                  <span class="checkout-price-desc">Por apenas 4x de</span>
+                  <span class="checkout-price-value">R$ 8,04</span>
+              </div>
+          </div>
+      
+              <div class="checkout-discount">
+              <img class="notice-icon" src="./assets/timer.webp" />Seu desconto expira em <span id="timer3"></span> min
+          </div>
+          
+          <a class="button" style="animation-delay: 1s;" href="https://pay.kiwify.com.br/gaP7t75?utm_campaign=&amp;utm_source=&amp;utm_content=&amp;utm_medium=&amp;utm_term=">Começar agora!</a> 
+           
+           
+          
+          <div class="checkout-safe">
+              <img class="safe-icon" src="./assets/safe.webp" />Pagamento 100% seguro    </div>
+      
+        </div>
+      </section>
+      
+      
+      <script>
+      document.getElementById('timer1').innerHTML = "09" + ":" + "00";
+      startTimer1();
+      
+      function startTimer1() {
+        var presentTime1 = document.getElementById('timer1').innerHTML;
+        var timeArray1 = presentTime1.split(/[:]+/);
+        var m = timeArray1[0];
+        var s = checkSecond1((timeArray1[1] - 1));
+        if(s==59){m=m-1}
+        //if(m<0){alert('timer completed')}
+        
+        document.getElementById('timer1').innerHTML =
+          m + ":" + s;
+        setTimeout(startTimer1, 1000);
+      }
+      
+      function checkSecond1(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+        if (sec < 0) {sec = "59"};
+        return sec;
+      }
+      </script>
+      
+      <script>
+      document.getElementById('timer2').innerHTML = "09" + ":" + "00";
+      startTimer2();
+      
+      function startTimer2() {
+        var presentTime2 = document.getElementById('timer2').innerHTML;
+        var timeArray2 = presentTime2.split(/[:]+/);
+        var m = timeArray2[0];
+        var s = checkSecond2((timeArray2[1] - 1));
+        if(s==59){m=m-1}
+        //if(m<0){alert('timer completed')}
+        
+        document.getElementById('timer2').innerHTML = m + ":" + s;
+        setTimeout(startTimer2, 1000);
+      }
+      
+      function checkSecond2(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+        if (sec < 0) {sec = "59"};
+        return sec;
+      }
+      </script>
+      
+      <script>
+      document.getElementById('timer3').innerHTML = "09" + ":" + "00";
+      startTimer3();
+      
+      function startTimer3() {
+        var presentTime3 = document.getElementById('timer3').innerHTML;
+        var timeArray3 = presentTime3.split(/[:]+/);
+        var m = timeArray3[0];
+        var s = checkSecond3((timeArray3[1] - 1));
+        if(s==59){m=m-1}
+        //if(m<0){alert('timer completed')}
+        
+        document.getElementById('timer3').innerHTML =
+          m + ":" + s;
+        setTimeout(startTimer3, 1000);
+      }
+      
+      function checkSecond3(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+        if (sec < 0) {sec = "59"};
+        return sec;
+      }
+      </script>
+
+</body>
+</html>
